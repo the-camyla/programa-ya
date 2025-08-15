@@ -1,0 +1,192 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+	
+body{
+	font-family: 'roboto',sans-serif;
+}
+header{
+	background: rgb(245,245,245);
+}
+
+.contenedor{
+	width:90%;
+	margin: auto;
+}
+header .contenedor{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+}
+.logo{
+	color: blueviolet;
+	font-size: 2.5em;
+	font-weight: bold;
+}
+.logo,nav{
+	padding: 10px;
+}
+nav a{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	padding: 5px 10px;
+}
+nav a:hover{
+	background: blueviolet;
+	color: white;
+}
+#aprende{
+	background-image: url("imagenes/hero.jpg");
+	background-size: cover;
+	background-position: center center;
+	height:60vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	
+}
+#aprende h1{
+	color: white;
+	font-size:2em;
+	margin-bottom: 3%;
+}
+button{
+	background: rgb(138,63,226);
+	color: white;
+	border-radius: 10px;
+	padding: 10px;
+	font-size:1.2em;
+	font-weight:bold;
+	
+
+}
+button:hover{
+	background: rgb(113,21,200);
+}
+span{
+	color:blueviolet;
+	font-size:1.2em;
+}
+#programa_ya{
+	text-align: center;
+}
+#programa_ya h1{
+	padding: 30px;
+}
+#programa_ya p{
+	padding-bottom: 30px;
+}
+#nuestros_programas {
+	background: linear-gradient(black,blueviolet);
+}
+#nuestros_programas .programas {
+	display: flex;
+	flex-direction: row;
+    text-align: center;
+	color: white;
+	padding-bottom: 5%;
+	
+}
+#nuestros_programas .titulos_violeta{
+	text-align: center;
+	color: blueviolet;
+	padding: 5%;
+}
+#nuestros_programas button{
+	margin: 15%;
+}
+#nuestros_programas h1{
+	margin: 20px 0;
+}
+#nuestros_programas p{
+	margin: 0 8px;
+}
+#nuestros_programas span{
+	color: white;
+	text-shadow:0 0 10px ,0 0 20px,0 0 40px;
+}
+#cartauno{
+	background-image: linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0)),url("imagenes/cartauno.jpg");
+	background-size: cover;
+    background-position: right;
+	margin:0 2%;
+	border-radius: 10px;
+}
+#cartados{
+	background-image: linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0)),url("imagenes/cartados.jpg");
+	background-size: cover;
+    background-position: center center;
+	margin:0 2%;
+	border-radius: 10px;
+}
+#cartatres{
+	background-image: linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0)),url("imagenes/cartatres.jpg");
+	background-size: cover;
+    background-position: center center;
+	margin:0 2%;
+	border-radius: 10px;
+}
+#caracteristicas .contenedor {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50vh;
+}
+#caracteristicas .contenedor ul{
+	text-align: center;
+	font-weight: bold;
+	list-style: none;
+}
+#caracteristicas li {
+	margin: 10px;
+}
+#listo{
+	background: linear-gradient(black,blueviolet);
+	background-size: center;
+	background-position: center center;
+	height:60vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;	
+}
+#listo h1{
+	color: white;
+	font-size:2.5em;
+	margin-bottom: 3%;
+}
+
+footer .contenedor{
+	text-align: center;
+	height:100px;
+	margin:10px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+footer p {
+	color: gray;
+}
+@media (max-width: 720px){
+	header .contenedor {
+		flex-direction: column;
+	}
+	header nav{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+	#nuestros_programas .programas{
+		flex-direction: column;
+	}
+	#cartauno,#cartados,#cartatres{
+		margin: 30px;
+	}
+}
